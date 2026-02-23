@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Plate | Fine Dining</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .gold-text { color: #D4AF37; }
+        .gold-bg { background-color: #D4AF37; }
+        .hero-overlay { background: rgba(0, 0, 0, 0.7); }
+    </style>
+</head>
+<body class="bg-zinc-950 text-gray-100">
+
+    <nav class="flex justify-between items-center px-10 py-6 absolute w-full z-10">
+        <div class="text-2xl font-bold tracking-widest gold-text">GOLDEN PLATE</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+            <a href="#" class="hover:text-amber-500 transition">Menu</a>
+            <a href="#" class="hover:text-amber-500 transition">Experience</a>
+            <a href="#" class="hover:text-amber-500 transition">Contact</a>
+            <a href="#" class="border border-amber-600 px-4 py-1 hover:bg-amber-600 transition">Book a Table</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex items-center justify-center relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=2070" class="absolute w-full h-full object-cover" alt="Fine Dining">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative text-center px-4">
+            <h1 class="text-6xl md:text-8xl mb-4">The Art of <span class="gold-text italic">Flavor</span></h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8 font-light tracking-wide">
+                An exquisite journey through contemporary fine dining, where every plate tells a story of tradition and innovation.
+            </p>
+            <button class="gold-bg text-black px-8 py-4 uppercase text-xs font-bold tracking-tighter hover:bg-yellow-600 transition">
+                View Tonight's Menu
+            </button>
+        </div>
+    </section>
+
+    <section class="py-24 px-10 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl mb-2">Signature Selections</h2>
+            <div class="w-20 h-1 gold-bg mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="flex justify-between border-b border-zinc-800 pb-4">
+                <div>
+                    <h3 class="text-xl gold-text">Saffron Risotto</h3>
+                    <p class="text-gray-500 text-sm italic">Gold leaf, arborio rice, 24-month parmesan</p>
+                </div>
+                <span class="text-xl">$42</span>
+            </div>
+            <div class="flex justify-between border-b border-zinc-800 pb-4">
+                <div>
+                    <h3 class="text-xl gold-text">Wagyu A5 Striploin</h3>
+                    <p class="text-gray-500 text-sm italic">Truffle jus, smoked bone marrow, micro-greens</p>
+                </div>
+                <span class="text-xl">$120</span>
+            </div>
+            <div class="flex justify-between border-b border-zinc-800 pb-4">
+                <div>
+                    <h3 class="text-xl gold-text">Midnight Sea Bass</h3>
+                    <p class="text-gray-500 text-sm italic">Squid ink reduction, pickled fennel, lemon zest</p>
+                </div>
+                <span class="text-xl">$58</span>
+            </div>
+            <div class="flex justify-between border-b border-zinc-800 pb-4">
+                <div>
+                    <h3 class="text-xl gold-text">Golden Soufflé</h3>
+                    <p class="text-gray-500 text-sm italic">Dark chocolate, edible gold, Madagascan vanilla</p>
+                </div>
+                <span class="text-xl">$24</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-10 text-center border-t border-zinc-900">
+        <p class="text-xs text-gray-600 tracking-widest uppercase">
+            &copy; 2026 Golden Plate Luxury Dining. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
